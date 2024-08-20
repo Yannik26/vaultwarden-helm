@@ -293,9 +293,9 @@ database:
 ## @section Push notifications
 ##
 
-## @extra pushNotifications Enable mobile push notifications. Refer to https://github.com/dani-garcia/vaultwarden/wiki/Enabling-Mobile-Client-push-notification for details
+## @extra pushNotifications Enable mobile push notifications, see values.yaml for parameters
 ## Supported since 1.29.0.
-## 
+## Refer to https://github.com/dani-garcia/vaultwarden/wiki/Enabling-Mobile-Client-push-notification for details
 ##
 pushNotifications: 
   ## @param pushNotifications.existingSecret Name of an existing secret containing the Bitwarden installation id and key

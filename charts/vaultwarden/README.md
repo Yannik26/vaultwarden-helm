@@ -337,9 +337,18 @@ helm -n $NAMESPACE uninstall $RELEASE_NAME
 
 ### Push notifications
 
-| Name                | Description                                                      | Value |
-| ------------------- | ---------------------------------------------------------------- | ----- |
-| `pushNotifications` | Enable mobile push notifications, see values.yaml for parameters | `{}`  |
+| Name                                                  | Description                                                                         | Value                            |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------- |
+| `pushNotifications`                                   | Enable mobile push notifications, see values.yaml for parameters                    |                                  |
+| `pushNotifications.existingSecret`                    | Name of an existing secret containing the Bitwarden installation id and key         | `""`                             |
+| `pushNotifications.installationId`                    | Installation Id for mobile push notifications                                       |                                  |
+| `pushNotifications.installationId.value`              | Bitwarden installation id string                                                    | `""`                             |
+| `pushNotifications.installationId.existingSecretKey`  | When using an existing secret, specify the key which contains the installation id.  | `""`                             |
+| `pushNotifications.installationKey`                   | Installation Key for mobile push notifications                                      |                                  |
+| `pushNotifications.installationKey.value`             | Bitwarden installation key string                                                   | `""`                             |
+| `pushNotifications.installationKey.existingSecretKey` | When using an existing secret, specify the key which contains the installation key. | `""`                             |
+| `pushNotifications.relayUri`                          | Change Bitwarden relay uri.                                                         | `https://push.bitwarden.com`     |
+| `pushNotifications.identityUri`                       | Change Bitwarden identity uri.                                                      | `https://identity.bitwarden.com` |
 
 ### Scheduled jobs
 
