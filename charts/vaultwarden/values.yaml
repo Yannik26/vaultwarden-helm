@@ -293,7 +293,7 @@ database:
 ## @section Push notifications
 ##
 
-## @extra pushNotifications Enable mobile push notifications. Refer to https://github.com/dani-garcia/vaultwarden/wiki/Enabling-Mobile-Client-push-notification for details
+## @extra pushNotifications Enable mobile push notifications.\n Refer to https://github.com/dani-garcia/vaultwarden/wiki/Enabling-Mobile-Client-push-notification for details
 ## Supported since 1.29.0.
 ## 
 ##
