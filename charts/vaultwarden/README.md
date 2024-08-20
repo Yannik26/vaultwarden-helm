@@ -339,7 +339,6 @@ helm -n $NAMESPACE uninstall $RELEASE_NAME
 
 | Name                                                  | Description                                                                         | Value                            |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------- |
-| `pushNotifications.installationKey`                   | Installation Key for mobile push notifications                                      |                                  |
 | `pushNotifications.existingSecret`                    | Name of an existing secret containing the Bitwarden installation id and key         | `""`                             |
 | `pushNotifications.installationId.value`              | Bitwarden installation id string                                                    | `""`                             |
 | `pushNotifications.installationId.existingSecretKey`  | When using an existing secret, specify the key which contains the installation id.  | `""`                             |
